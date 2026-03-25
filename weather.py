@@ -1,8 +1,11 @@
-
 series_titles = ["Maximum temperature (Degree C)", "Minimum temperature (Degree C)", "Rainfall amount (millimetres)"]
 
 def mean(in_series):
-    pass
+    cleaned = []
+    for x in in_series:
+        if x is not None:
+            cleaned.append(x)
+    return sum(cleaned) / len(cleaned)
 
 def variance(in_series):
     pass
